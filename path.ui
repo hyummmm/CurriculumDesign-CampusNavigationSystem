@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Path</class>
+ <widget class="QDialog" name="Path">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QPushButton{
+background-color:#cfe3ef;
+border-radius:1px;
+color:#355386;
+}
+QPushButton:hover{
+background-color:rgb(165, 188, 239);
+};
+
+background:rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QComboBox" name="DepartureCombo">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>教学楼A座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼B座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼C座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼D座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>天鹅湖</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>情人坡</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>外语楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>信息楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>图书馆</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>中南讲堂</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>综合实验楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>篮球场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>毓秀楼</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="ShortestButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>260</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询最短路径</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="DestinationCombo">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>教学楼A座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼B座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼C座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼D座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>天鹅湖</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>情人坡</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>外语楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>信息楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>图书馆</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>中南讲堂</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>综合实验楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>篮球场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>毓秀楼</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="LabelDes">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>目的地：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ClearButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>300</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清除信息</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelDepart">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出发地：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AllButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>220</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询全部路径</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MapLabel">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>40</y>
+     <width>571</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/pic/images/MapWithNode.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showShortest">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>410</y>
+     <width>801</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="AllPath">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>500</y>
+     <width>801</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelShortest">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>390</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>最短路径</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelAll">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>480</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全部路径</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

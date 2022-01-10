@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>images/MapWithNode.png</file>
+        <file>images/MapWithPath.png</file>
+        <file>images/background.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Info</class>
+ <widget class="QDialog" name="Info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QPushButton{
+background-color:#cfe3ef;
+border-radius:1px;
+color:#355386;
+}
+QPushButton:hover{
+background-color:rgb(165, 188, 239);
+};
+background:rgb(255, 255, 255);
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>景点：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>591</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/pic/images/MapWithNode.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RequestButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>90</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="InformationRequest">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>教学楼A座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼B座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼C座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教学楼D座</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>天鹅湖</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>情人坡</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>外语楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>信息楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>图书馆</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>中南讲堂</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>综合实验楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>篮球场</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>毓秀楼</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Info_2">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>160</y>
+     <width>191</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
